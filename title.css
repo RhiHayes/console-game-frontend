@@ -1,0 +1,105 @@
+/* DEFAULT SETTINGS */
+
+html  {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+.size-wrapper { /* Keeps everything from over-expanding on bigger pages*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-img {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5a4ba495ccc5c58d3a440d55/1515154484608-FRXPDTIMYIB9A46J0K01/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/Cave_v001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 900px;
+    padding-bottom: 50px;
+    max-width: 100%;
+}
+
+
+/* TITLE STYLING / ANIMATION */
+
+.my-title {
+    color: white;
+    text-align: center;
+    margin-top: -750px;
+    font-size: 100px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* BUTTON STYLING / ANIMATION */
+
+.button-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.button-container-2 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.play-button {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-color: black !important;
+    color: white !important;
+    padding: 20px 90px !important;
+    border: red !important;
+}
+
+.pulse:hover {
+    animation: pulse 1.0s ease-in infinite;
+}
+
+@keyframes pulse {
+    25%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+}
