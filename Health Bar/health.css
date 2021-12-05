@@ -27,3 +27,13 @@
     bottom: 0;
     width: 0px;
 }
+
+
+.bar-2 {
+    background: #33b864;
+    width: 100%;
+    height: 10px;
+    position: relative;
+
+    transition: width .5s linear;
+}

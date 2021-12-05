@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    //ENEMY HEALTH
+
     var hitBtn = $('button.damage'),
         reset = $('button.reset'),
         hBar = $('.health-bar'),
@@ -10,7 +13,7 @@ $(document).ready(function(){
             value = hBar.data('value'); //gets data from html
 
         if (value < 0) {
-            log("you dead, reset");
+            log("you're dead, reset");
             return;
         }
         var damage = Math.floor(Math.random()* 6) + 15; //gets damage from 15-20
